@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مطعم البركة | كبده وكريب</title>
+<meta name="description" content="مطعم البركة - كبده وكريب. الخصوص، شارع الصرف. خدمة توصيل الطلبات 24 ساعة.">
+<style>
+:root{--bg:#090909;--card:#17120f;--red:#a8171c;--red2:#d22624;--gold:#e4b44d;--cream:#fff3dc;--muted:#c5b9a8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;font-family:Cairo,Arial,sans-serif}
+a{text-decoration:none;color:inherit}.nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:13px 5%;background:rgba(9,9,9,.82);backdrop-filter:blur(14px);border-bottom:1px solid #ffffff14}
+.logo{font-size:22px;font-weight:900;color:var(--gold)}.navlinks{display:flex;gap:20px;color:#eee;font-size:14px}.navlinks a:hover{color:var(--gold)}
+.hero{min-height:92vh;display:grid;place-items:center;text-align:center;padding:130px 20px 80px;position:relative;overflow:hidden;background:linear-gradient(135deg,#160908,#35110e 48%,#090909)}
+.hero:before{content:"";position:absolute;inset:0;background:url("1000224286.jpg") center/cover;opacity:.23;filter:saturate(1.1);}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25),#090909 94%);}
+.hero-inner{position:relative;z-index:1;max-width:920px}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px}.hero h1{font-size:clamp(45px,10vw,94px);line-height:1;margin:14px 0 10px}.hero h1 span{color:var(--red2)}.hero p{font-size:clamp(17px,2.5vw,23px);color:#f5eee5;max-width:720px;margin:0 auto 26px;line-height:1.9}
+.badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:20px 0}.badge{padding:8px 15px;border:1px solid #ffffff25;border-radius:999px;background:#0008;color:#fff;font-size:13px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.btn{padding:13px 23px;border-radius:999px;font-weight:900;border:1px solid #ffffff22;background:#ffffff0d}.btn.primary{background:var(--red2);border-color:var(--red2)}.btn.gold{background:var(--gold);color:#1b1106;border-color:var(--gold)}.btn:hover{transform:translateY(-2px)}
+section{padding:82px 5%}.container{max-width:1180px;margin:auto}.title{text-align:center;margin-bottom:38px}.title span{color:var(--gold);font-size:13px;font-weight:900;letter-spacing:1px}.title h2{font-size:38px;margin:6px 0}.title p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#1b1512,#100e0d);border:1px solid #ffffff10;border-radius:22px;padding:26px}.icon{font-size:31px}.card h3{margin:10px 0 6px}.card p{color:var(--muted);line-height:1.9;margin:0}
+.gallery{display:grid;grid-template-columns:2fr 1fr;gap:14px}.photo{height:300px;border-radius:22px;overflow:hidden;background:#222}.photo.big{height:615px;grid-row:span 2}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}.photo:hover img{transform:scale(1.03)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.menu-card{background:#f4eee4;border-radius:22px;padding:10px;overflow:hidden}.menu-card img{width:100%;height:auto;display:block;border-radius:15px}.menu-note{text-align:center;color:var(--muted);margin:20px 0 0}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-card{background:linear-gradient(145deg,#1d1512,#100e0d);border:1px solid #ffffff10;border-radius:22px;padding:30px}.phone{font-size:29px;color:var(--gold);font-weight:900;direction:ltr;display:inline-block;margin:10px 0}.location{color:#ddd;line-height:2}.map{min-height:310px;border-radius:22px;display:grid;place-items:center;text-align:center;padding:30px;background:radial-gradient(circle at 50% 40%,#4a1813,#15100f 65%);border:1px solid #ffffff10}.pin{font-size:54px}
+footer{border-top:1px solid #ffffff10;padding:28px 5%;text-align:center;color:#91877a}
+@media(max-width:800px){.navlinks{display:none}.cards,.contact,.menu-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.photo.big{height:390px;grid-row:auto}.photo{height:250px}.hero{min-height:88vh}.title h2{font-size:30px}.phone{font-size:23px}}
+</style>
+
+<style>
+.filters{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:0 auto 28px}
+.filter{font-family:inherit;border:1px solid #ffffff18;background:#15110f;color:#eee;padding:9px 15px;border-radius:999px;cursor:pointer;font-weight:800}
+.filter.active,.filter:hover{background:#d22624;border-color:#d22624}
+.digital-menu{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.menu-group{background:linear-gradient(145deg,#1c1512,#100e0d);border:1px solid #ffffff10;border-radius:20px;padding:20px}
+.menu-group h3{margin:0 0 15px;color:#fff}
+.items{display:grid;gap:7px}
+.item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #ffffff0b}
+.item:last-child{border-bottom:0}.item span{color:#eee;line-height:1.6}.item b{white-space:nowrap;color:#e4b44d;font-size:14px}
+.menu-group small{display:block;color:#958b7e;margin-top:12px;line-height:1.6}.menu-foot{text-align:center;color:#c7bba9;margin-top:24px}.menu-foot a{color:#e4b44d;font-weight:900}
+@media(max-width:800px){.digital-menu{grid-template-columns:1fr}.item{align-items:flex-start}.item b{font-size:13px}}
+</style>
+
+<style>
+.order-btn{border:0;background:#a8171c;color:#fff;font-family:inherit;font-weight:900;border-radius:9px;padding:7px 11px;cursor:pointer;white-space:nowrap}
+.order-btn:hover{background:#d22624}.cart-fab{position:fixed;left:18px;bottom:18px;z-index:50;border:0;background:#e4b44d;color:#17100a;font-family:inherit;font-weight:900;border-radius:999px;padding:13px 18px;box-shadow:0 8px 30px #0008;cursor:pointer}
+.cart-count{display:inline-grid;place-items:center;min-width:23px;height:23px;border-radius:50%;background:#a8171c;color:#fff;margin-right:6px}
+.cart-panel{position:fixed;left:18px;bottom:76px;width:min(390px,calc(100vw - 36px));max-height:72vh;z-index:49;background:#17120f;border:1px solid #ffffff20;border-radius:20px;box-shadow:0 20px 70px #000b;padding:18px;display:none}
+.cart-panel.open{display:block}.cart-head{display:flex;justify-content:space-between;align-items:center}.cart-head h3{margin:0}.cart-close{border:0;background:#ffffff12;color:#fff;border-radius:9px;padding:6px 10px;cursor:pointer}
+.cart-items{max-height:38vh;overflow:auto;margin:14px 0}.cart-row{border-bottom:1px solid #ffffff12;padding:10px 0}.cart-row-top{display:flex;justify-content:space-between;gap:10px}.cart-row small{color:#bdb1a2}.qty{display:flex;align-items:center;gap:7px;margin-top:8px}.qty button{border:0;background:#ffffff12;color:#fff;width:28px;height:28px;border-radius:7px;cursor:pointer}.cart-total{display:flex;justify-content:space-between;font-size:20px;font-weight:900;color:#e4b44d;padding:10px 0}.wa-btn{width:100%;border:0;border-radius:12px;padding:12px;background:#25D366;color:#071b0e;font-family:inherit;font-weight:900;cursor:pointer}
+.modal-backdrop{position:fixed;inset:0;background:#000a;z-index:60;display:none;place-items:center;padding:18px}.modal-backdrop.open{display:grid}.modal{width:min(420px,100%);background:#18130f;border:1px solid #ffffff20;border-radius:20px;padding:20px}.modal h3{margin-top:0}.variant-list{display:grid;gap:8px;margin:15px 0}.variant{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid #ffffff18;background:#ffffff08;color:#fff;border-radius:11px;padding:11px;cursor:pointer;font-family:inherit}.variant:hover{border-color:#e4b44d}.cancel{width:100%;border:1px solid #ffffff18;background:#ffffff08;color:#fff;border-radius:10px;padding:10px;font-family:inherit;cursor:pointer}
+@media(max-width:600px){.cart-panel{bottom:72px}.cart-fab{left:12px;bottom:12px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="logo" href="#">البركة</a>
+  <div class="navlinks"><a href="#about">عن المطعم</a><a href="#gallery">الصور</a><a href="#menu">المنيو</a><a href="#contact">تواصل</a></div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">AL BARAKA RESTAURANT</div>
+    <h1>مطعم <span>البركة</span></h1>
+    <p>كبده • كريب • حواوشي • مكرونة • أرز • ساندوتشات</p>
+    <div class="badges"><div class="badge">⏰ خدمة 24 ساعة</div><div class="badge">🛵 توصيل طلبات</div><div class="badge">📍 الخصوص</div></div>
+    <div class="btns">
+      <a class="btn gold" href="tel:01151604267">📞 اطلب الآن</a>
+      <a class="btn primary" href="https://maps.app.goo.gl/7iEYxdRNzU1mc9GW8" target="_blank" rel="noopener">📍 افتح الموقع</a>
+      <a class="btn" href="#menu">📋 شوف المنيو</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+<div class="container">
+<div class="title"><span>WELCOME</span><h2>أهلاً بيك في البركة</h2><p>مطعم متخصص في الأكل الشرقي والساندوتشات، حسب المنيو المرفق.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🥙</div><h3>تنوع في الأكل</h3><p>حواوشي، مكرونة، أرز، كبدة، ساندوتشات وأصناف بطاطس وإضافات.</p></div>
+<div class="card"><div class="icon">🕐</div><h3>خدمة 24 ساعة</h3><p>المنيو المرفق يعلن عن خدمة 24 ساعة.</p></div>
+<div class="card"><div class="icon">🛵</div><h3>توصيل الطلبات</h3><p>للطلب والتوصيل: <a style="color:var(--gold)" href="tel:01151604267">01151604267</a></p></div>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+<div class="title"><span>GALLERY</span><h2>البركة من جوه وبره</h2><p>صور حقيقية أرسلتها للموقع.</p></div>
+<div class="gallery">
+<div class="photo big"><img src="1000224286.jpg" alt="واجهة مطعم البركة"></div>
+<div class="photo"><img src="1000224287.jpg" alt="منيو مطعم البركة"></div>
+<div class="photo"><img src="1000224283.jpg" alt="منيو مطعم البركة - أصناف وأسعار"></div>
+</div>
+</div>
+</section>
+
+
+<section id="menu">
+<div class="container">
+<div class="title"><span>INTERACTIVE MENU</span><h2>منيو البركة</h2><p>الأسعار مأخوذة من صور المنيو المرفقة، والجنيه المصري هو العملة.</p></div>
+<div class="filters">
+<button class="filter active" data-cat="all">الكل</button>
+<button class="filter" data-cat="sandwich">ساندوتشات</button>
+<button class="filter" data-cat="krep">كريب</button>
+<button class="filter" data-cat="burger">برجر</button>
+<button class="filter" data-cat="hawawshi">حواوشي</button>
+<button class="filter" data-cat="pasta">مكرونة وأرز</button>
+<button class="filter" data-cat="potato">بطاطس</button>
+<button class="filter" data-cat="shawarma">شاورما</button>
+<button class="filter" data-cat="orders">طلبات</button>
+</div>
+<div class="digital-menu">
+
+<div class="menu-group" data-cat="sandwich"><h3>🥪 الساندوتشات — كبدة • سجق • كفتة</h3>
+<div class="items">
+<div class="item"><span>ساندوتش كبدة إسكندراني</span><b>7 / 10 / 12 ج</b></div>
+<div class="item"><span>ساندوتش كبدة بالخلطة</span><b>7 / 10 / 12 ج</b></div>
+<div class="item"><span>ساندوتش كبد وقوانص</span><b>8 / 12 / 12 ج</b></div>
+<div class="item"><span>ساندوتش كفتة كبيبة</span><b>7 / 10 / 12 ج</b></div>
+<div class="item"><span>ساندوتش سجق شرقي</span><b>7 / 10 / 12 ج</b></div>
+<div class="item"><span>ساندوتش سجق مدخن</span><b>8 / 12 / 12 ج</b></div>
+<div class="item"><span>ساندوتش سجق صوابع</span><b>8 / 12 / 12 ج</b></div>
+</div><small>الأسعار الثلاثية حسب نوع/حجم العيش كما ظاهر في المنيو.</small></div>
+
+<div class="menu-group" data-cat="krep"><h3>🌯 ركن الكريب</h3><div class="items">
+<div class="item"><span>كريب بطاطس</span><b>35 ج</b></div><div class="item"><span>كريب بانية كرسبي</span><b>40 ج</b></div>
+<div class="item"><span>كريب بانية بطاطس</span><b>50 ج</b></div><div class="item"><span>كريب برجر</span><b>50 ج</b></div>
+<div class="item"><span>كريب برجر جامبو</span><b>70 ج</b></div><div class="item"><span>كريب سوسيس</span><b>50 ج</b></div>
+<div class="item"><span>كريب كبدة أو سجق أو كفتة</span><b>50 ج</b></div><div class="item"><span>كريب بانية فريش</span><b>70 ج</b></div>
+<div class="item"><span>كريب شاورما فراخ</span><b>70 ج</b></div><div class="item"><span>كريب استريكس</span><b>70 ج</b></div>
+<div class="item"><span>كريب شيش طاوق</span><b>70 ج</b></div><div class="item"><span>كريب فاهيتا</span><b>70 ج</b></div>
+<div class="item"><span>كريب ميكس فراخ</span><b>80 ج</b></div>
+</div></div>
+
+<div class="menu-group" data-cat="burger"><h3>🍔 ركن البرجر</h3><div class="items">
+<div class="item"><span>ساندوتش برجر سادة</span><b>15 / 15 ج</b></div>
+<div class="item"><span>ساندوتش برجر (جبنة أو بيض)</span><b>25 / 25 ج</b></div>
+<div class="item"><span>ساندوتش برجر ميكس (جبنة وبيض)</span><b>30 / 30 ج</b></div>
+<div class="item"><span>ساندوتش برجر جامبو سادة</span><b>25 / 25 ج</b></div>
+<div class="item"><span>ساندوتش برجر جامبو (جبنة أو بيض)</span><b>35 / 35 ج</b></div>
+<div class="item"><span>ساندوتش برجر جامبو ميكس (جبنة وبيض)</span><b>40 / 40 ج</b></div>
+<div class="item"><span>ساندوتش سوسيس سادة</span><b>15 ج</b></div>
+<div class="item"><span>ساندوتش سوسيس (بيض أو جبنة)</span><b>25 ج</b></div>
+<div class="item"><span>ساندوتش سوسيس ميكس (جبنة وبيض)</span><b>35 ج</b></div>
+<div class="item"><span>ساندوتش هوت دوج</span><b>15 ج</b></div>
+<div class="item"><span>ساندوتش بانية كرسبي</span><b>15 ج</b></div>
+<div class="item"><span>ساندوتش بانية فريش</span><b>25 ج</b></div>
+<div class="item"><span>ساندوتش بانية + (جبنة أو بطاطس)</span><b>20 ج</b></div>
+<div class="item"><span>ساندوتش فاهيتا</span><b>35 / 30 ج</b></div>
+</div></div>
+
+<div class="menu-group" data-cat="hawawshi"><h3>🥙 ركن الحواوشي</h3><div class="items">
+<div class="item"><span>رغيف حواوشي</span><b>12 ج</b></div>
+<div class="item"><span>رغيف حواوشي مخصوص</span><b>15 ج</b></div>
+<div class="item"><span>رغيف حواوشي بالجبنة</span><b>20 ج</b></div>
+</div></div>
+
+<div class="menu-group" data-cat="pasta"><h3>🍝 ركن المكرونة والأرز</h3><div class="items">
+<div class="item"><span>طبق مكرونة إسباجتي صلصة</span><b>20 ج</b></div>
+<div class="item"><span>طبق مكرونة (كبدة / سجق / كفتة)</span><b>30 ج</b></div>
+<div class="item"><span>مكرونة إسباجتي + 2 قطعة بانية فريش</span><b>50 ج</b></div>
+<div class="item"><span>مكرونة إسباجتي + 2 قطعة بانية كوكي</span><b>40 ج</b></div>
+<div class="item"><span>مكرونة إسباجتي بشاورما</span><b>55 ج</b></div>
+<div class="item"><span>مكرونة بشامل لحمة أو فراخ</span><b>25 ج</b></div>
+<div class="item"><span>طبق رز بالشعرية</span><b>15 ج</b></div>
+<div class="item"><span>طبق رز بسمتي</span><b>20 ج</b></div>
+<div class="item"><span>رز بالشعرية (كبدة / سجق / كفتة / مشكل)</span><b>30 / 35 ج</b></div>
+<div class="item"><span>رز بالشعرية + فراخ</span><b>50 ج</b></div>
+<div class="item"><span>رز بسمتي + فراخ</span><b>55 ج</b></div>
+</div></div>
+
+<div class="menu-group" data-cat="potato"><h3>🍟 ركن البطاطس</h3><div class="items">
+<div class="item"><span>باكت بطاطس فارم</span><b>15 ج</b></div>
+<div class="item"><span>ساندوتش بطاطس فرنساوي</span><b>10 ج</b></div>
+<div class="item"><span>ساندوتش بطاطس بلدي</span><b>10 ج</b></div>
+<div class="item"><span>ساندوتش بطاطس بالجبنة</span><b>20 ج</b></div>
+<div class="item"><span>ساندوتش بطاطس ميكس (بيض وبانية)</span><b>25 ج</b></div>
+</div></div>
+
+<div class="menu-group" data-cat="shawarma"><h3>🌯 ركن الشاورما</h3><div class="items">
+<div class="item"><span>ساندوتش شاورما كيزر</span><b>30 ج</b></div>
+<div class="item"><span>ساندوتش شاورما فرنساوي</span><b>35 ج</b></div>
+</div></div>
+
+<div class="menu-group" data-cat="orders"><h3>🍽️ ركن الطلبات</h3><div class="items">
+<div class="item"><span>طلب كبدة بالخلطة + سلطة + طحينة + مخلل</span><b>45 / 60 ج</b></div>
+<div class="item"><span>طلب كبدة كبيبة + سلطة + طحينة + مخلل</span><b>45 / 60 ج</b></div>
+<div class="item"><span>طلب سجق + سلطة + طحينة + مخلل</span><b>45 / 60 ج</b></div>
+<div class="item"><span>طلب كفتة + سلطة + طحينة + مخلل</span><b>45 / 60 ج</b></div>
+<div class="item"><span>طلب شيش طاوق + سلطة + طحينة + مخلل</span><b>45 / 60 ج</b></div>
+<div class="item"><span>طلب كبدة + سجق + كفتة + سلطة + طحينة + مخلل</span><b>50 / 70 ج</b></div>
+<div class="item"><span>طلب سوسيس + سلطة + طحينة + مخلل</span><b>50 / 70 ج</b></div>
+</div></div>
+
+<div class="menu-group" data-cat="sandwich"><h3>🥗 إضافات</h3><div class="items">
+<div class="item"><span>علبة سلطة طماطم</span><b>5 ج</b></div><div class="item"><span>علبة سلطة طحينة</span><b>5 ج</b></div><div class="item"><span>علبة طرشي مشكل</span><b>10 ج</b></div>
+<div class="item"><span>إضافة جبنة أو بطاطس أو بيض</span><b>10 ج</b></div>
+</div></div>
+
+</div>
+<div class="menu-foot">☎️ للطلب والتوصيل: <a href="tel:01151604267">01151604267</a> — الأسعار كما تظهر في صور المنيو المرسلة.</div>
+</div>
+</section>
+<section id="contact">
+<div class="container">
+<div class="title"><span>CONTACT</span><h2>اطلب من البركة</h2><p>اتصل مباشرة أو افتح موقع المطعم.</p></div>
+<div class="contact">
+<div class="contact-card">
+<h3>📞 رقم الطلب والتوصيل</h3>
+<a class="phone" href="tel:01151604267">011 51604267</a>
+<div><a class="btn gold" href="tel:01151604267">اتصال مباشر</a></div>
+<hr style="border:0;border-top:1px solid #ffffff12;margin:25px 0">
+<h3>📍 العنوان</h3>
+<p class="location">مطعم البركة — الخصوص، شارع الصرف، القليوبية، مصر</p>
+<a class="btn primary" href="https://maps.app.goo.gl/7iEYxdRNzU1mc9GW8" target="_blank" rel="noopener">فتح Google Maps</a>
+</div>
+<div class="map">
+<div><div class="pin">📍</div><h3>مطعم البركة</h3><p>الخصوص • شارع الصرف</p><a class="btn" href="https://maps.app.goo.gl/7iEYxdRNzU1mc9GW8" target="_blank" rel="noopener">اعرف الطريق ←</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<footer>© 2026 مطعم البركة — الخصوص · كبده وكريب</footer>
+
+<script>
+document.querySelectorAll('.filter').forEach(btn=>{
+ btn.addEventListener('click',()=>{
+   document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));
+   btn.classList.add('active');
+   const cat=btn.dataset.cat;
+   document.querySelectorAll('.menu-group').forEach(g=>{
+     g.style.display=(cat==='all'||g.dataset.cat===cat)?'block':'none';
+   });
+ });
+});
+</script>
+
+<div class="cart-panel" id="cartPanel">
+  <div class="cart-head"><h3>🛒 طلبك</h3><button class="cart-close" id="cartClose">إغلاق</button></div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-total"><span>الإجمالي</span><span id="cartTotal">0 ج</span></div>
+  <button class="wa-btn" id="sendWhatsApp">إرسال الطلب على واتساب</button>
+</div>
+<button class="cart-fab" id="cartFab">🛒 الطلب <span class="cart-count" id="cartCount">0</span></button>
+
+<div class="modal-backdrop" id="variantModal">
+  <div class="modal">
+    <h3 id="variantTitle">اختار السعر</h3>
+    <p style="color:#bdb1a2">المنيو فيها أكتر من سعر للصنف ده. اختار السعر المطلوب.</p>
+    <div class="variant-list" id="variantList"></div>
+    <button class="cancel" id="variantCancel">إلغاء</button>
+  </div>
+</div>
+
+<script>
+const cart=[];
+const phone='201151604267';
+
+function parsePrices(text){
+  return [...text.matchAll(/\d+/g)].map(m=>Number(m[0])).filter(n=>n>0);
+}
+function money(n){return n.toLocaleString('ar-EG')+' ج';}
+function renderCart(){
+  const box=document.getElementById('cartItems'), count=document.getElementById('cartCount'), totalEl=document.getElementById('cartTotal');
+  const total=cart.reduce((s,x)=>s+x.price*x.qty,0);
+  const countN=cart.reduce((s,x)=>s+x.qty,0);
+  count.textContent=countN; totalEl.textContent=money(total);
+  if(!cart.length){box.innerHTML='<p style="color:#aaa;text-align:center;padding:20px 0">لسه مفيش أصناف في الطلب.</p>';return;}
+  box.innerHTML=cart.map((x,i)=>`
+    <div class="cart-row">
+      <div class="cart-row-top"><strong>${x.name}</strong><strong>${money(x.price*x.qty)}</strong></div>
+      <small>${money(x.price)} × ${x.qty}</small>
+      <div class="qty">
+        <button onclick="changeQty(${i},-1)">−</button><span>${x.qty}</span><button onclick="changeQty(${i},1)">+</button>
+        <button style="margin-right:auto;width:auto;padding:0 8px" onclick="removeItem(${i})">حذف</button>
+      </div>
+    </div>`).join('');
+}
+window.changeQty=(i,d)=>{cart[i].qty+=d;if(cart[i].qty<=0)cart.splice(i,1);renderCart();}
+window.removeItem=(i)=>{cart.splice(i,1);renderCart();}
+
+function addItem(name,price){
+  const found=cart.find(x=>x.name===name && x.price===price);
+  if(found)found.qty++; else cart.push({name,price,qty:1});
+  renderCart();
+  document.getElementById('cartPanel').classList.add('open');
+}
+
+let pendingName=null;
+function chooseVariant(name,prices){
+  pendingName=name;
+  const list=document.getElementById('variantList');
+  list.innerHTML=prices.map((p,i)=>`<button class="variant" onclick="selectVariant(${p})"><span>اختيار ${i+1}</span><b>${money(p)}</b></button>`).join('');
+  document.getElementById('variantTitle').textContent=name;
+  document.getElementById('variantModal').classList.add('open');
+}
+window.selectVariant=(p)=>{addItem(pendingName,p);document.getElementById('variantModal').classList.remove('open');pendingName=null;}
+
+document.querySelectorAll('.menu-group .item').forEach(row=>{
+  const name=row.querySelector('span')?.textContent.trim()||'صنف';
+  const priceText=row.querySelector('b')?.textContent||'';
+  const prices=parsePrices(priceText);
+  const btn=document.createElement('button');
+  btn.className='order-btn'; btn.textContent='اطلب';
+  btn.onclick=()=>prices.length>1?chooseVariant(name,prices):addItem(name,prices[0]||0);
+  row.appendChild(btn);
+});
+
+document.getElementById('cartFab').onclick=()=>document.getElementById('cartPanel').classList.toggle('open');
+document.getElementById('cartClose').onclick=()=>document.getElementById('cartPanel').classList.remove('open');
+document.getElementById('variantCancel').onclick=()=>document.getElementById('variantModal').classList.remove('open');
+
+document.getElementById('sendWhatsApp').onclick=()=>{
+  if(!cart.length){alert('ضيف صنف واحد على الأقل للطلب.');return;}
+  const lines=cart.map(x=>`• ${x.name} — ${x.qty} × ${money(x.price)} = ${money(x.price*x.qty)}`);
+  const total=cart.reduce((s,x)=>s+x.price*x.qty,0);
+  const msg=`السلام عليكم، عايز أطلب من مطعم البركة:%0A%0A${encodeURIComponent(lines.join('\n'))}%0A%0Aالإجمالي: ${encodeURIComponent(money(total))}%0A%0Aالعنوان: `;
+  window.open(`https://wa.me/${phone}?text=${msg}`,'_blank');
+};
+renderCart();
+</script>
+</body>
+</html>
